@@ -1,0 +1,83 @@
+body {
+
+    background-color: white;
+    height: 100%;
+    background-color:rgb(207, 131, 187); ;
+
+}
+    nav {
+        background-color: white
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0; 
+    }
+    
+    nav ul li {
+        display: inline; 
+    
+    }
+    
+    nav ul li a {
+        color: white; 
+        padding: 15px; /* Afstand omkring teksten */
+    }
+    
+    nav ul li a:hover {
+        background-color: white
+    }
+    
+
+.profil_billede 
+{
+    float: right;
+    padding: 10px;
+    width: 100px;
+    background-color: white;
+}
+
+    header
+     {background-color: rgb(207, 131, 187);
+        color: #ffffff;
+        padding: 20px;
+        overflow: auto;
+        text-align: center;
+    
+
+    }
+
+    nav {
+        background: rgb(207, 131, 187);
+        color: #ffffff;
+        border: 5px solid white;
+    }
+
+    .skole
+           {
+    
+        background-color: white
+
+    }
+    
+.arbejde
+
+{
+   
+    padding: 10px;
+    width: 150px;
+   
+    
+}
+
+.uganda
+{
+
+    padding: 10px;
+    width: 150px;
+  
+}
+    
+
+
+ 

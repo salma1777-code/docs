@@ -1,0 +1,97 @@
+html,
+body {
+    height: 100%;
+}
+
+
+#butterfly {
+    height: 200px;
+    width: auto;
+    position: absolute;
+}
+
+#wateringcan {
+    width: 200px;
+    position: fixed;
+    bottom: 20%;
+    left: 40%;
+}
+
+
+.waterdrop {
+    width: 20px;
+	position: absolute;
+}
+
+#net {
+    height: 600px;
+    width: auto;
+    position: absolute;
+
+}
+
+.apple {
+    height: 50px;
+    width: auto;
+    position: absolute;
+}
+
+#tree {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+
+}
+
+.basket {
+    width: 200px;
+    position: fixed;
+    bottom: 20px;
+    left: 20%;
+
+}
+
+
+body {
+    margin: 0px;
+    background-image: url("../images/grass.png");
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    overflow: hidden;
+}
+.waterdrop {
+    position: absolute;
+    width: 12px;
+    height: 20px;
+    background-color: blue; /* Represent waterdrops */
+    border-radius: 50%;
+    display: none; /* Initially hidden */
+    z-index: 2; /* Ensure waterdrops appear above other elements */
+}
+
+#wateringcan.tilted {
+    transform: rotate(-30deg); /* Tilt the can for pouring */
+    transition: transform 0.3s ease; /* Smooth tilting animation */
+}
+.apple {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none; /* Hidden initially until positioned */
+    background: url('images/apple.png') no-repeat center / contain; /* Ensure apple image */
+    z-index: 5; /* Ensure apples are on top */
+}
+
+#basket {
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+    width: 120px;
+    height: auto;
+    background: url('images/basket.png') no-repeat center / contain; /* Ensure basket image */
+    z-index: 3;
+}
+
+

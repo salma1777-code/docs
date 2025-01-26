@@ -1,0 +1,42 @@
+
+
+.animal_main {
+    border: 2px solid black;
+    background-color: greenyellow;
+    padding: 10px;
+    height: 100%;
+}
+
+
+#yellow_box {
+    width: 15%;
+    height: 15%;
+    background-color: yellow; 
+
+}
+
+#nicki {
+    max-width: 75%;
+    max-width: 100%;
+  
+}   
+
+#red_box {
+    width: 400px;
+    height: 200px;
+    background-color: red;
+
+}
+
+#blue_box {
+    width: 20%;
+    height: 20%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body { height: 100%;
+
+}

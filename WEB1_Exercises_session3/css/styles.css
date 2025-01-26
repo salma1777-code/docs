@@ -1,0 +1,54 @@
+body {
+
+    background-color: greenyellow;
+}
+
+.animal_main {
+    height: 150px;
+    float: left;
+
+}
+
+
+.crocodile
+
+{
+    float: left;
+    background-color: red;
+    overflow: auto;
+    border: 5px solid black;
+    padding: 10px;
+     
+
+}
+
+.elephant
+{
+    
+    background-color: blue;
+    overflow: auto;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.giraffe
+{
+    float: left;
+    background-color: green;
+    overflow: auto;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.tiger
+
+{
+    background-color: pink;
+    overflow: auto;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+
+
+

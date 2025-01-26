@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Box</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* Prevents the box from showing scrollbars */
+    }
+    .box {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+  <div class="box"></div>
+
+  <script>
+    $(document).ready(function () {
+      const $box = $('.box');
+
+      function animateBox() {
+        const screenWidth = $(window).width();
+        const screenHeight = $(window).height();
+
+        // Step 1: Move to top-center with a 1-second delay
+        $box.delay(1000).animate({
+          left: screenWidth / 2 - $box.width() / 2,
+          top: 0
+        }, 1000, function () {
+          // Step 2: Move to bottom-right with a 1-second delay
+          $box.delay(1000).animate({
+            left: screenWidth - $box.width(),
+            top: screenHeight - $box.height()
+          }, 1000, function () {
+            // Step 3: Move back to starting position with a 1-second delay
+            $box.delay(1000).animate({
+              left: 0,
+              top: screenHeight - $box.height()
+            }, 1000, function () {
+              // Repeat the animation
+              animateBox();
+            });
+          });
+        });
+      }
+
+      // Start the animation
+      animateBox();
+    });
+  </script>
+</body>
+</html>

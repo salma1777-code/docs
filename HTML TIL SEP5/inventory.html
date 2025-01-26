@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Overview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Medicine Inventory Overview</h1>
+    </header>
+
+    <main>
+        <!-- Inventory Table -->
+        <section>
+            <h2>Inventory Status</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Medicine ID</th>
+                        <th>Quantity</th>
+                        <th>Barcode</th>
+                        <th>Expiry Date</th>
+                        <th>Min Stock</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryTable">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Take Medicine Out -->
+        <section>
+            <h2>Dispense Medicine</h2>
+            <div>
+                <label for="medicineSelect">Select Medicine:</label>
+                <select id="medicineSelect"></select>
+            </div>
+            <div>
+                <label for="quantityInput">Enter Quantity:</label>
+                <input type="number" id="quantityInput" min="1">
+            </div>
+            <div>
+                <button id="dispenseBtn">Dispense</button>
+            </div>
+        </section>
+        
+
+        <!-- Orders Table -->
+<section>
+    <h2>Upcoming Orders</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Medicine Name</th>
+                <th>Quantity</th>
+                <th>Medicine ID</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="ordersTable">
+            <!-- Populated by JavaScript -->
+        </tbody>
+    </table>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Medicine Inventory Management</p>
+    </footer>
+
+    <script src="js/inventory.js"></script>
+</body>
+</html>
